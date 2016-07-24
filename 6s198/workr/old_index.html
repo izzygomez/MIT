@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Workr</title>
+	</head>
+	<body>
+		<h1>Workr - 6.S198 Project 2</h1>
+		<h2><a href="./workr.apk" target="_blank">Here's the *.apk file</a></h2>
+		<h3>Team members</h3>
+		<ul>
+			<li>Izzy Gomez - Team Manager</li>
+			<li>Phillip Graham - Team Architect</li>
+			<li>Jordan Powell - Engineer</li>
+			<li>Tyler Nolan - Engineer</li>
+		</ul>
+		<h3>Team Mentor:</h3>
+		<ul><li>Dave Mitchell</li></ul>
+		<br>
+		<p><b>Project Update 4/21/15:</b> We've checked in with Dave Mitchell through email and he's provided substantial and useful feedback for our application; we plan on meeting up with him in person on 4/22/15. The project features that have already been implemented are getting user permissions to use their calendar and extract events, parsing these events along with the user-defined tasks to specify "free time" available (which will be used in our notification algorithm), and small steps in creating the notification/services system. The UI has a basic implementation of adding and deleting assignments.</p>
+		<h1>Workr Testing Protocol</h1>
+		<p>Upon opening the app after installing the APK for the first time there will be a dialog asking to select a calendar.  This should populate with all the calendars on your system.  Select the calendar you would like to be included as your schedule and advance to the main screen.</p>
+		<ol>
+			<li>The screen has three main buttons, from left to right those buttons are add, edit and delete.  The first thing to do is add an assignment using the plus button.  This will redirect you to a screen with four choices.  Enter in a name for the assignment, the estimated number of hours, when it is due and the priority.  Each of these entries has a custom way of entry to make entering data faster.  An example to enter would be 6.S198 Project, 10 hours, due today (default date of calendar) and high priority.</li>			
+			<li>After hitting save the assignment should now appear in the list view with all of the specified fields.  If some were left blank than default information will be entered in its place.  Each entry in the list view can be selected and will show as highlighted in blue.  You will also see that the bars at the bottom of the screen have changed to reflect the amount of time estimated for the assignment.  This takes into account events on the calendar as well as assignments and shows times for three different periods of time.  Next edit the previously entered assignment by selecting the assignment and clicking on the pencil icon.</li>
+			<li>Clicking on this icon will bring you to a similar screen as the add screen but with all the fields pre populated.  This can be used for any type of editing whether changing a due date, a name of an assignment or a time estimation change.  The information is changed just like before and saving the task will return to the home screen with the list view now reflecting the updated edit.</li>
+			<li>You can add as many assignments as you would like and the bars will reflect how much free time there is available outside of work and calendar events.  There is also an ongoing notification which informs the user how long the next assignment is due in as well as how much free time is available that day.  This will update as time passes to show how much time a person has.  Clicking on the icon brings the user back to the home screen.</li>
+			<li>The delete button works similarly to the edit button as an assignment must be selected and then will be removed from the list on deletion.  Try deleting some assignments and watch as the bars respond to change and give a better picture of the days ahead.</li>
+		</ol>
+	</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Assignment 8</title>
+	</head>
+	<body>
+		<p>Student: Ismael Gomez, Term: Spring 2015</p>
+		<h1>Assignment 8</h1>
+
+		<h2>Part 1</h2>
+		<h3>Sleepy</h3>
+		<p><a href="https://izzygomez.com/mit/6s198/assignment8/sleepy.apk">Here's a link to the Sleepy app *.apk,</a></p>
+		<p><a href="https://izzygomez.com/mit/6s198/assignment8/sleepy.rar">and here's a link to the Sleepy app source.</a></p>
+		<p>In the Sleepy application, I created a simple user interface with three buttons which start a timer of 20, 60, or 90 minutes, respectively. The timers are created by the use of the implicit intent described by the <i>ACTION_SET_TIMER</i> action (<a href="https://developer.android.com/guide/components/intents-common.html">as explained here</a>). These values represent the duration of naps to take throughout the day, in accordance with what research suggest are optimal nap time durations; the inspiration/source for the application is linked from the app (<a href="https://lifehacker.com/how-long-to-nap-for-the-biggest-brain-benefits-1251546669">and here!</a>).</p>
+
+		<h3>GetBackToMe</h3>
+		<p><a href="https://izzygomez.com/mit/6s198/assignment8/getbacktome.apk">Here's a link to the GetBackToMe app *.apk,</a></p>
+		<p><a href="https://izzygomez.com/mit/6s198/assignment8/getbacktome.rar">and here's a link to the GetBackToMe app source.</a></p>
+		<p>In the GetBackToMe application, I again created a relatively simple UI that gives a user two options: to select a contact, and to send that contact an SMS message. When selecting a contact, the implicit intent described by the <i>ACTION_PICK</i> action is used, and the data is received back in the application for manipulation (using <i>startActivityForResult()</i>). In this app, we extract the contact's phone number, and then give the user the option to send them a pre-defined text message that let's their contact know to <i>get back to the sender</i> as soon as possible (i.e. possibly tried to contact them, but they didn't pick up, so you use this app to send this pre-defined message instead of always having to manually retype the message in a messaging app).</p>
+		
+		<h2>Part 2</h2>
+		<h3>FoodExplorer</h3>
+		<p><a href="https://izzygomez.com/mit/6s198/assignment8/foodexplorer.apk">Here's a link to the FoodExplorer app *.apk,</a></p>
+		<p><a href="https://izzygomez.com/mit/6s198/assignment8/foodexplorer.rar">and here's a link to the FoodExplorer app source.</a></p>
+		<p>In the FoodExplorer application (now in Android Studio!), I extended the functionality of ListViews and overwrote the <i>onListItemClick()</i> of the <i>ListActivity</i> public class so that when we clicked a list item we opened a new activity with a slew of more information relating to the entry. This includes adding nutritional information that was previously not shown (I tried calling the Cloudinary service, but had poor luck with bugs and decided against it last minute). Furthermore, I made the search capabilities of the FoodExplorer application a function of user input, instead of hardcoding "pizza" in.</p>
+	</body>
+</html>
