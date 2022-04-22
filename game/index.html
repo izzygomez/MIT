@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title>Game of Life</title>
+
+		<link type="text/css" rel="stylesheet" href="modules/gameoflife.css">
+	</head>
+	<body>
+		<!-- Headers and instructions -->
+		<h1>Conway's Game of Life</h1>
+		<h3>Izzy Gomez, 6.170 Fall 2015</h3>
+		<p>Click on a cell to switch it between dead and alive. There are some preset boards available through the buttons below. To start the simulation, press <i>Start</i>; to stop it, press <i>Stop</i>. You also have the liberty of progressing through successive generations of cells at your own pace by pressing <i>Step</i>. Enjoy &hearts;</p>
+
+		<!-- Game board -->
+		<section>
+	    	<div id="game_board">
+	    	</div>
+	  	</section>
+		
+		<!-- Buttons and status -->
+		<br>
+		<button id="gliderbutton" onclick='CURRENT_BOARD = gliderBoard(); displayBoard($("#game_board"), CURRENT_BOARD)'>Glider</button>
+		<button id="pulsarbutton" onclick='CURRENT_BOARD = pulsarBoard(); displayBoard($("#game_board"), CURRENT_BOARD)'>Pulsar</button>
+		<button id="flowerbutton" onclick='CURRENT_BOARD = flowerBoard(); displayBoard($("#game_board"), CURRENT_BOARD)'>Flower</button>
+		<button id="blankbutton" onclick='CURRENT_BOARD = blankBoard(); displayBoard($("#game_board"), CURRENT_BOARD)'>Blank</button>
+		<br>
+		
+		<br>
+	  	<button id="stepbutton" onclick="CURRENT_BOARD.step();">Step</button>
+		<button id="startbutton" onclick="startSimulation();">Start</button>
+		<button id="stopbutton" onclick="stopSimulation();">Stop</button>
+
+		<div>
+			<b>Status:</b> <a id="statusmessage">Not started.</a>	
+		</div>
+		
+		<!-- Script imports -->
+	  	<script type="text/javascript" src="lib/jquery-1.11.3.min.js"></script>
+
+	  	<script type="text/javascript" src="modules/gameoflife.js"></script>
+	  	<script type="text/javascript" src="modules/displayboard.js"></script>
+	  	<script type="text/javascript" src="modules/simulation.js"></script>
+	  	<script type="text/javascript" src="modules/initialization.js"></script>	  	
+	</body>
+</html>
