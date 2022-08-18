@@ -1,2 +1,2 @@
 # MIT
-school stuff
+(very incomplete) repo of school stuff
